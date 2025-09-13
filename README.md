@@ -1,17 +1,16 @@
-# ARC9 BOCW Sniper Rifles
+# ARC9 BOCW Sniper Rifles DLC
 
-3 launch BOCW sniper rifles on the base [ARC9](https://github.com/HaodongMo/ARC-9)
+2 seasonal BOCW sniper rifles on the base [ARC9](https://github.com/HaodongMo/ARC-9)
 
 ## You need to have [Shared Content](https://github.com/multinettt/ARC-9_BOCW_Shared_Content) in order to avoid missing textures, materials and sounds.
 
 ## Customization is limited without [BOCW Attachments](https://github.com/multinettt/ARC-9_BOCW_Attachments)
 
 ## Weapons List:
-### Sniper Rifles:
+### Sniper Rifles DLC:
 
-- Pelington 703 (Remington 700PSS)
-- LW3 - Tundra (Accuracy International PM/AW Hybrid)
-- M82 (Barrett M82A1M)
+- ZRG 20mm (Mechem NTW-20)
+- Swiss K31
 
 ## Personalization:
 
