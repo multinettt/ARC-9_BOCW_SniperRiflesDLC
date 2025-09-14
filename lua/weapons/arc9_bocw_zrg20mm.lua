@@ -1,23 +1,23 @@
 --=============================================================================
 --   ARC9 CALL OF DUTY: BLACK OPS COLD WAR
---   SNIPER RIFLES
---   LW3 - Tundra
+--   SNIPER RIFLES DLC
+--   ZRG 20mm
 --=============================================================================
 --[[
 --   SWEP INFORMATION:
 
 --   BASE  : ARC9
 --   BUILD : v2025.9
---   SR.NO : 370-552E-0Y56
+--   SR.NO : 
 
 
-ooooo        oooooo   oooooo     oooo   .oooo.                 ooooooooooooo                               .o8                     
-`888'         `888.    `888.     .8'  .dP""Y88b                8'   888   `8                              "888                     
- 888           `888.   .8888.   .8'         ]8P'                    888      oooo  oooo  ooo. .oo.    .oooo888  oooo d8b  .oooo.   
- 888            `888  .8'`888. .8'        <88b.                     888      `888  `888  `888P"Y88b  d88' `888  `888""8P `P  )88b  
- 888             `888.8'  `888.8'          `88b.    8888888         888       888   888   888   888  888   888   888      .oP"888  
- 888       o      `888'    `888'      o.   .88P                     888       888   888   888   888  888   888   888     d8(  888  
-o888ooooood8       `8'      `8'       `8bd88P'                     o888o      `V88V"V8P' o888o o888o `Y8bod88P" d888b    `Y888""8o 
+ oooooooooooo ooooooooo.     .oooooo.         .oooo.     .oooo.                                       
+d'""""""d888' `888   `Y88.  d8P'  `Y8b      .dP""Y88b   d8P'`Y8b                                      
+      .888P    888   .d88' 888                    ]8P' 888    888 ooo. .oo.  .oo.   ooo. .oo.  .oo.   
+     d888'     888ooo88P'  888                  .d8P'  888    888 `888P"Y88bP"Y88b  `888P"Y88bP"Y88b  
+   .888P       888`88b.    888     ooooo      .dP'     888    888  888   888   888   888   888   888  
+  d888'    .P  888  `88b.  `88.    .88'     .oP     .o `88b  d88'  888   888   888   888   888   888  
+.8888888888P  o888o  o888o  `Y8bood8P'      8888888888  `Y8bd8P'  o888o o888o o888o o888o o888o o888o 
 
 
 ]]
@@ -32,15 +32,15 @@ SWEP.Category = "ARC9 - Black Ops Cold War"
 SWEP.SubCategory = "5Sniper Rifles"
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "LW3 - Tundra"
-SWEP.TrueName = "PM/AW Hybrid"
+SWEP.PrintName = "ZRG 20mm"
+SWEP.TrueName = "NTW-20"
 SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
-    Manufacturer = "Accuracy International",
-    Calibre = "7.62x51mm NATO",
-    Mechanism = "Bolt-action",
-    Country = "United Kingdom",
-    Year = 1982
+    Manufacturer = "Denel Land Systems",
+    Calibre = "20x82mm",
+    Mechanism = "Bolt-action, recoiling barrel",
+    Country = "South Africa",
+    Year = 1998
 }
 
 SWEP.Credits = {
@@ -48,16 +48,16 @@ SWEP.Credits = {
     --Contact = "https://steamcommunity.com/id/multinett/"
 }
 
-SWEP.Description = [[Bolt-action sniper rifle. High damage with moderate sway. 1-shot kill to the head, chest or shoulders. Hold L SHIFT while ADS to steady.
+SWEP.Description = [[Bolt-action cannon. Slow rechamber with best 1-hit kill potential in class. Additional vehicle damage that increases with the size of the target. Hold L SHIFT while ADS to steady.
 
-The L96A1 is a bolt-action sniper rifle featured in Call of Duty: Black Ops, Call of Duty: Black Ops Declassified, Call of Duty: Black Ops Cold War and Call of Duty: Mobile.
+The ZRG 20mm is a bolt-action sniper rifle featured in Call of Duty: Black Ops Cold War and Call of Duty: Mobile.
 
-The L96A1 returns in Call of Duty: Black Ops Cold War as the LW3 - Tundra. It is manufactured by the same company as the LC10.]]
+The ZRG 20mm was added to Call of Duty: Black Ops Cold War on April 7th, 2021 as part of the Season Two update.]]
 
 SWEP.UseHands = true
 
-SWEP.ViewModel = "models/weapons/arc9/c_arc9_lw3tundra_bocw.mdl"
-SWEP.WorldModel = "models/weapons/arc9/c_arc9_lw3tundra_bocw.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_arc9_zrg20mm_bocw.mdl"
+SWEP.WorldModel = "models/weapons/arc9/c_arc9_zrg20mm_bocw.mdl"
 
 SWEP.Slot = 2
 
@@ -106,18 +106,18 @@ SWEP.ArmDamage = 1
 SWEP.LegDamage = 1
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1.6,
-    [HITGROUP_STOMACH] = 1.3,
-    [HITGROUP_LEFTARM] = 1.4,
-    [HITGROUP_RIGHTARM] = 1.4,
+    [HITGROUP_HEAD] = 8,
+    [HITGROUP_CHEST] = 4,
+    [HITGROUP_STOMACH] = 2,
+    [HITGROUP_LEFTARM] = 1.6,
+    [HITGROUP_RIGHTARM] = 1.6,
     [HITGROUP_LEFTLEG] = 1,
     [HITGROUP_RIGHTLEG] = 1,
 }
 
 SWEP.AlwaysPhysBullet = true
 
-SWEP.PhysBulletMuzzleVelocity = 580 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 923 * 39.37
 SWEP.PhysBulletDrag = 1
 SWEP.PhysBulletDontInheritPlayerVelocity = false -- Set to true to disable "Browning Effect"
 
@@ -158,7 +158,7 @@ SWEP.ManualActionNoLastCycle = true -- Do not cycle on the last shot.
 SWEP.ManualActionEjectAnyway = false -- Eject a shell when firing anyway.
 SWEP.EjectDelay = 0.4
 
-SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_lw3tundra_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
+SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_zrg20mm_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
 SWEP.DropMagazineAmount = 1 -- Amount of mags to drop.
 SWEP.DropMagazineSkin = 0 -- Model skin of mag.
@@ -243,7 +243,7 @@ SWEP.RestoreBreathTime = 4
 
 SWEP.FreeAimRadiusSights = 0
 
-SWEP.AimDownSightsTime = 0.650 -- How long it takes to go from hip fire to aiming down sights.
+SWEP.AimDownSightsTime = 0.683 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.450 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.ShootWhileSprint = false
@@ -290,9 +290,9 @@ SWEP.ShootPitch = 100
 SWEP.ShootPitchVariation = 0.05
 
 --SWEP.FirstShootSound = nil
-SWEP.ShootSound = "ARC9_BOCW.LW3Tundra_fire"
---SWEP.ShootSoundIndoor = "ARC9_BOCW.LW3Tundra_fire_int_decay"                  -- Fire indoors
-SWEP.ShootSoundSilenced = "ARC9_BOCW.LW3Tundra_fire_silenced"                    -- Fire silenced
+SWEP.ShootSound = "ARC9_BOCW.ZRG20mm_fire"
+--SWEP.ShootSoundIndoor = "ARC9_BOCW.ZRG20mm_fire_int_decay"                  -- Fire indoors
+SWEP.ShootSoundSilenced = "ARC9_BOCW.ZRG20mm_fire_silenced"                    -- Fire silenced
 SWEP.ShootSoundIndoorSilenced = nil             -- Fire indoors silenced
 SWEP.FirstShootSoundSilenced = nil              -- First fire silenced
 SWEP.FirstDistantShootSound = nil               -- First distant fire
@@ -428,7 +428,7 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(17, 45, 4)
+SWEP.CustomizePos = Vector(21, 48, 5)
 SWEP.CustomizeRotateAnchor = Vector(17, 0, -3)
 
 SWEP.CustomizeSnapshotFOV = 70
@@ -559,8 +559,8 @@ SWEP.AttachmentTableOverrides = {
     ["bocw_optic_hangmanrf"] = {
         VisualRecoil = 0.1
     },
-    ["bocw_lw3tundra_optic_base"] = {
-        ModelOffset = Vector(1.48,0,0.12),
+    ["bocw_zrg20mm_optic_base"] = {
+        ModelOffset = Vector(0,0,0.12),
         Scale = 1,
         VisualRecoil = 0.1
     },
@@ -586,13 +586,13 @@ SWEP.DuplicateAttachments = true
 SWEP.Attachments = {
     {
         PrintName = "OPTIC", -- print name
-        Bone = "tag_weapon",
-        Pos = Vector(6, 0, 4.72),
+        Bone = "tag_rail",
+        Pos = Vector(0, 0, -0.08),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_lw3tundra_optic", "bocw_optic"},
-        Installed = "bocw_lw3tundra_optic_base",
-        Integral = "bocw_lw3tundra_optic_base",
+        Category = {"bocw_zrg20mm_optic", "bocw_optic"},
+        Installed = "bocw_zrg20mm_optic_base",
+        Integral = "bocw_zrg20mm_optic_base",
     },
     {
         PrintName = "MUZZLE",
@@ -600,9 +600,9 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
-        Category = {"bocw_lw3tundra_muzzle"},
-        Installed = "bocw_lw3tundra_muzzle_base",
-        Integral = "bocw_lw3tundra_muzzle_base",
+        Category = {"bocw_zrg20mm_muzzle"},
+        Installed = "bocw_zrg20mm_muzzle_base",
+        Integral = "bocw_zrg20mm_muzzle_base",
     },
     {
         PrintName = "BARREL",
@@ -610,7 +610,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(15, 0, 0),
-        Category = {"bocw_lw3tundra_barrel"},
+        Category = {"bocw_zrg20mm_barrel"},
     },
     {
         PrintName = "BODY",
@@ -634,7 +634,7 @@ SWEP.Attachments = {
         Pos = Vector(-7.6, -4.42, 6.1),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
-        Category = {"bocw_lw3tundra_underbarrel", "bocw_sn_underbarrel"},
+        Category = {"bocw_zrg20mm_underbarrel", "bocw_sn_underbarrel"},
         InstalledElements = {"foregripmount"},
     },
     {
@@ -643,7 +643,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
-        Category = {"bocw_lw3tundra_mag"},
+        Category = {"bocw_zrg20mm_mag"},
         InstalledElements = {"maggone"},
     },
     {
@@ -652,7 +652,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-0.5, 0, -0.25),
-        Category = {"bocw_lw3tundra_wrap"},
+        Category = {"bocw_zrg20mm_wrap"},
     },
     {
         PrintName = "STOCK",
@@ -660,7 +660,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-10, 0, 2.5),
-        Category = {"bocw_lw3tundra_stock"},
+        Category = {"bocw_zrg20mm_stock"},
     },
     {
         PrintName = "CAMO",
@@ -671,25 +671,25 @@ SWEP.Attachments = {
     {
         PrintName = "STICKER 1",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_lw3tundra_sticker1.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_zrg20mm_sticker1.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 2",
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_lw3tundra_sticker2.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_zrg20mm_sticker2.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 3", 
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_lw3tundra_sticker3.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_zrg20mm_sticker3.mdl",
         CosmeticOnly = true,
     },
     {
         PrintName = "STICKER 4", 
         Category = "stickers",
-        StickerModel = "models/weapons/arc9/stickers/bocw_lw3tundra_sticker4.mdl",
+        StickerModel = "models/weapons/arc9/stickers/bocw_zrg20mm_sticker4.mdl",
         CosmeticOnly = true,
     },
 }
@@ -699,18 +699,16 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     local vm = data.model
     local attached = data.elements
 
-    if attached["bocw_lw3tundra_optic"] then
-        if attached["bocw_lw3tundra_optic_base"] then
+    if attached["bocw_zrg20mm_optic"] then
+        if attached["bocw_zrg20mm_optic_base"] then
             vm:SetBodygroup(2, 1)
-            vm:SetBodygroup(3, 1) -- rear iron sight logic
-        elseif attached["bocw_sniper_optic_ironsights"] then
+        elseif attached["bocw_sniperdlc_optic_ironsights"] then
             vm:SetBodygroup(2, 0)
         end
     end
 
     if attached["bocw_optic"] then
         vm:SetBodygroup(2, 1)
-        vm:SetBodygroup(3, 2)
     end
 
     if attached["bocw_sniper_underbarrel_frontgrip"] or attached["bocw_sniper_underbarrel_bipod"] then
@@ -722,15 +720,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     local elements = swep:GetElements()
 
-    if elements["lw3tundra_mag_ext"] then
+    if elements["zrg20mm_mag_ext"] then
         return anim .. "_ext"
     end
 
-    if elements["lw3tundra_mag_fast"] then
+    if elements["zrg20mm_mag_fast"] then
         return anim .. "_fast"
     end
 
-    if elements["lw3tundra_mag_mix"] then
+    if elements["zrg20mm_mag_mix"] then
         return anim .. "_mix"
     end
 end
@@ -792,8 +790,8 @@ SWEP.Animations = {
     ["ready"] = {
         Source = {"ready"},
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_ready_boltforward", t = 0.2 },
-            { s = "ARC9_BOCW.LW3Tundra_ready_boltdown", t = 0.3 },
+            { s = "ARC9_BOCW.ZRG20mm_ready_boltforward", t = 0.2 },
+            { s = "ARC9_BOCW.ZRG20mm_ready_boltdown", t = 0.3 },
         },
         IKTimeLine = {
             {
@@ -812,8 +810,8 @@ SWEP.Animations = {
         Source = "cycle",
         Time = 1.1,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_cycle_boltback", t = 0.1 },
-            { s = "ARC9_BOCW.LW3Tundra_cycle_boltforward", t = 0.4 },
+            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_cycle_boltforward", t = 0.4 },
         },
         FireASAP = true
     },
@@ -851,10 +849,10 @@ SWEP.Animations = {
         NoMagSwap = true,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
         },
         IKTimeLine = {
             {
@@ -876,12 +874,12 @@ SWEP.Animations = {
         MagSwapTime = 2,
         DropMagAt = 1.7,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltback", t = 0 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.5 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
@@ -904,10 +902,10 @@ SWEP.Animations = {
         Time = 3.22,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
         },
         IKTimeLine = {
             {
@@ -929,12 +927,12 @@ SWEP.Animations = {
         MagSwapTime = 2,
         DropMagAt = 1.7,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltback", t = 0 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.5 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
@@ -957,9 +955,9 @@ SWEP.Animations = {
         Time = 3.22,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_fast_magout", t = 0.5 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_fast_magin", t = 1.8 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 1.8 },
         },
         IKTimeLine = {
             {
@@ -990,11 +988,11 @@ SWEP.Animations = {
         MinProgress = 0.6,
         DropMagAt = 1.6,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_cycle_boltback", t = 0 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.5 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_fast_magout", t = 1.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_fast_magin", t = 2.3 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltforward", t = 3 },
+            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.3 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.6 },
             { hide = 0, t = 2 },
@@ -1032,10 +1030,10 @@ SWEP.Animations = {
         Time = 3.22,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
         },
         IKTimeLine = {
             {
@@ -1057,12 +1055,12 @@ SWEP.Animations = {
         MagSwapTime = 2,
         DropMagAt = 1.9,
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_cycle_boltback", t = 0 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.5 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.LW3Tundra_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.9 },
             { hide = 0, t = 2.2 },
@@ -1098,8 +1096,8 @@ SWEP.Animations = {
     ["enter_inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 0.4 },
-            { s = "ARC9_BOCW.LW3Tundra_movement", t = 4.2 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.4 },
+            { s = "ARC9_BOCW.ZRG20mm_movement", t = 4.2 },
         },
         IKTimeLine = {
             {

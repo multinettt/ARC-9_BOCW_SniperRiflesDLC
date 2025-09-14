@@ -27,7 +27,7 @@ ATT.Category = {"bocw_zrg20mm_optic"}
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.1, -1.035),
+        Pos = Vector(0, 8.5, -1.32),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 70
@@ -38,7 +38,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeMagnification = 8
 ATT.RTScopeReticle = Material("hud/arc9_bocw/reticle_zrg20mm.png", "mips smooth")
-ATT.RTScopeReticleScale = 2
+ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 1
 
@@ -61,15 +61,11 @@ The Iron Sights attachment return in Call of Duty: Black Ops Cold War as a Optic
 
 ATT.SortOrder = 0
 
-ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_optic_ironsights.mdl"
-
 ATT.Category = {"bocw_zrg20mm_optic"}
-
-ATT.ModelOffset = Vector(-1.9, 0, 0)
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
-ARC9.LoadAttachment(ATT, "bocw_zrg20mm_optic_ironsights")
+ARC9.LoadAttachment(ATT, "bocw_sniperdlc_optic_ironsights")
 --========== BARREL ===================
 ATT = {}
 
@@ -1409,3 +1405,28 @@ ATT.SpeedMultSighted = 1.4
 ATT.SpreadMultHipFire = 1.3
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_raider")
+
+--
+
+ATT = {}
+
+ATT.PrintName = "ZRG Muzzle Device"
+ATT.CompactName = "MUZZLE"
+ATT.Icon = Material("entities/bocw_atts/muzzles/m82_base.png", "mips smooth")
+ATT.Description = [[Default ZRG 20mm muzzle device.]]
+
+ATT.SortOrder = -10
+
+ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_muzzle.mdl"
+
+ATT.Category = {"bocw_zrg20mm_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_zrg20mm_muzzle_base")
