@@ -100,7 +100,7 @@ ARC9.LoadAttachment(ATT, "bocw_zrg20mm_barrel_extended")
 ATT = {}
 
 ATT.PrintName = [[40.1" Cavalry Lancer]] --// 2
-ATT.CompactName = [[40.1" CAVLRY]]
+ATT.CompactName = [[40.1" CVLRY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/zrg20mm_cavalry.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel broach rifled to improve damage against enemy vehicles.
 
@@ -122,7 +122,7 @@ ATT.ArmorPiercingMult = 2
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_cavalry"}
+ATT.ActivateElements = {"barrel_cavalry", "bipodmountgone"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -152,7 +152,7 @@ ATT.RPMMult = 1.15
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_rapidfire"}
+ATT.ActivateElements = {"barrel_rapidfire", "bipodmountgone"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -216,7 +216,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_ultralight"}
+ATT.ActivateElements = {"barrel_ultralight", "bipodmountgone"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -249,7 +249,7 @@ ATT.RPMMult = 0.81
 ATT.MuzzleParticleOverride_Priority = 100
 ATT.MuzzleDevice = true
 
-ATT.ActivateElements = {"barrel_sigmaspecial"}
+ATT.ActivateElements = {"barrel_sigmaspecial", "bipodmountgone"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 

@@ -90,7 +90,7 @@ SWEP.Distance = 1200 * 39.37 -- In Hammer units, how far bullets can travel, per
 SWEP.Num = 1 -- Number of bullets to shoot
 -- Bear in mind: Damage is divided by Num
 
-SWEP.Penetration = 10 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 100 -- Units of wood that can be penetrated by this gun.
 
 SWEP.DamageType = DMG_BULLET -- The damage type of the gun.
 -- DMG_BLAST will create explosive effects and create AOE damage.
@@ -134,7 +134,7 @@ SWEP.TracerSize = 0.5
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 5 -- Self-explanatory.
+SWEP.ClipSize = 3 -- Self-explanatory.
 SWEP.SupplyLimit = 4 -- Amount of magazines of ammo this gun can take from an ARC-9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -170,7 +170,7 @@ SWEP.DropMagazineVelocity = Vector(0, 0, 80) -- Put something here if your anim 
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 367
+SWEP.RPM = 70
 
 -- Works different to ArcCW
 
@@ -393,7 +393,7 @@ SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting v
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(0, -6.5, 0.2),
+    Pos = Vector(0, 0, 1.94),
     Ang = Angle(0, 0, 0),
     Magnification = 1.4,
     Blur = true,
@@ -428,8 +428,8 @@ SWEP.SightMidPoint = {
 
 -- Position for customizing
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(21, 48, 5)
-SWEP.CustomizeRotateAnchor = Vector(17, 0, -3)
+SWEP.CustomizePos = Vector(21, 48, 6)
+SWEP.CustomizeRotateAnchor = Vector(21, 0, -4)
 
 SWEP.CustomizeSnapshotFOV = 70
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
@@ -476,15 +476,15 @@ SWEP.AttachmentElements = {
     },
     ["barrelgone"] = {
         Bodygroups = {
-            {5, 1},
+            {4, 1},
         }
     },
     ["stockgone"] = {
         Bodygroups = {
-            {6, 1},
+            {5, 1},
         }
     },
-    ["cheekrestgone"] = {
+    ["bipodmountgone"] = {
         Bodygroups = {
             {7, 1},
         }
@@ -492,42 +492,42 @@ SWEP.AttachmentElements = {
     ["barrel_extended"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1, 0, 0),
+                Pos = Vector(3.18, 0, 0),
             },
         },
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.1, 0, 0),
+                Pos = Vector(0.61, 0, 0),
             },
         },
     },
     ["barrel_rapidfire"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-0.9, 0, 0),
+                Pos = Vector(-0.15, 0, 0),
             },
         },
     },
     ["barrel_combatrecon"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(2, 0, 0),
+                Pos = Vector(8.33, 0, 0),
             }
         },
     },
-    ["barrel_hammerforged"] = {
+    ["barrel_ultralight"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.1, 0, 0),
+                Pos = Vector(-4.55, 0, 0),
             },
         },
     },
-    ["barrel_tigerteam"] = {
+    ["barrel_sigmaspecial"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1, 0, 0),
+                Pos = Vector(5.54, 0, 0),
             }
         },
     },
@@ -609,8 +609,9 @@ SWEP.Attachments = {
         Bone = "tag_barrel",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(15, 0, 0),
+        Icon_Offset = Vector(12, 0, 0),
         Category = {"bocw_zrg20mm_barrel"},
+        InstalledElements = {"barrelgone"},
     },
     {
         PrintName = "BODY",
@@ -642,7 +643,7 @@ SWEP.Attachments = {
         Bone = "tag_clip",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, -1),
+        Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_zrg20mm_mag"},
         InstalledElements = {"maggone"},
     },
@@ -651,7 +652,7 @@ SWEP.Attachments = {
         Bone = "tag_weapon",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(-0.5, 0, -0.25),
+        Icon_Offset = Vector(-1.25, 0, -1.5),
         Category = {"bocw_zrg20mm_wrap"},
     },
     {
@@ -661,6 +662,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-10, 0, 2.5),
         Category = {"bocw_zrg20mm_stock"},
+        InstalledElements = {"stockgone"},
     },
     {
         PrintName = "CAMO",
@@ -789,9 +791,11 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = {"ready"},
+        Time = 2,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_ready_boltforward", t = 0.2 },
-            { s = "ARC9_BOCW.ZRG20mm_ready_boltdown", t = 0.3 },
+            { s = "ARC9_BOCW.ZRG20mm_ready_start", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_ready_boltforward", t = 0.6 },
+            { s = "ARC9_BOCW.ZRG20mm_ready_end", t = 1.3 },
         },
         IKTimeLine = {
             {
@@ -808,10 +812,10 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        Time = 1.1,
+        Time = 1.33,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0.1 },
-            { s = "ARC9_BOCW.ZRG20mm_cycle_boltforward", t = 0.4 },
+            { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 0.6 },
         },
         FireASAP = true
     },
@@ -845,14 +849,15 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "reload",
-        Time = 3.22,
+        Time = 4.2,
         NoMagSwap = true,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magoutstart", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.3 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.2 },
         },
         IKTimeLine = {
             {
@@ -869,17 +874,18 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        Time = 4.33,
+        Time = 5.87,
         MinProgress = 0.6,
         MagSwapTime = 2,
         DropMagAt = 1.7,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltback", t = 0 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magoutstart", t = 1.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 3.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.8 },
+            { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.7 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
@@ -899,13 +905,14 @@ SWEP.Animations = {
     },
     ["reload_ext"] = {
         Source = "reload_ext",
-        Time = 3.22,
+        Time = 4.2,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magoutstart", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.4 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.3 },
         },
         IKTimeLine = {
             {
@@ -922,17 +929,18 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_ext_empty",
-        Time = 4.33,
+        Time = 5.87,
         MinProgress = 0.6,
         MagSwapTime = 2,
         DropMagAt = 1.7,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltback", t = 0 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magoutstart", t = 1.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 2.1 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 3.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.8 },
+            { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.7 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
@@ -952,12 +960,12 @@ SWEP.Animations = {
     },
     ["reload_fast"] = {
         Source = "reload_fast",
-        Time = 3.22,
+        Time = 4.2,
         MinProgress = 0.65,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 0.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 1.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.2 },
         },
         IKTimeLine = {
             {
@@ -984,15 +992,16 @@ SWEP.Animations = {
     },
     ["reload_empty_fast"] = {
         Source = "reload_fast_empty",
-        Time = 4.33,
+        Time = 5.87,
         MinProgress = 0.6,
         DropMagAt = 1.6,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.3 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_magintap", t = 3.3 },
+            { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.4 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.6 },
             { hide = 0, t = 2 },
@@ -1027,13 +1036,12 @@ SWEP.Animations = {
     },
     ["reload_mix"] = {
         Source = "reload_mix",
-        Time = 3.22,
+        Time = 4.2,
         MinProgress = 0.7,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 0.6 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 1.8 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 2.4 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.2 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.2 },
         },
         IKTimeLine = {
             {
@@ -1050,17 +1058,16 @@ SWEP.Animations = {
     },
     ["reload_empty_mix"] = {
         Source = "reload_mix_empty",
-        Time = 4.33,
+        Time = 5.87,
         MinProgress = 0.65,
         MagSwapTime = 2,
         DropMagAt = 1.9,
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_cycle_boltback", t = 0 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magout", t = 1.1 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_magin", t = 2.2 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_boltforward", t = 3 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 3.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.5 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.6 },
+            { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.3 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.9 },
             { hide = 0, t = 2.2 },
@@ -1096,8 +1103,11 @@ SWEP.Animations = {
     ["enter_inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 0.4 },
-            { s = "ARC9_BOCW.ZRG20mm_movement", t = 4.2 },
+            { s = "ARC9_BOCW.ZRG20mm_inspect_part1", t = 0 },
+            { s = "ARC9_BOCW.ZRG20mm_inspect_part2", t = 1 },
+            { s = "ARC9_BOCW.ZRG20mm_inspect_part3", t = 2.5 },
+            { s = "ARC9_BOCW.ZRG20mm_inspect_part4", t = 3.5 },
+            { s = "ARC9_BOCW.ZRG20mm_inspect_part5", t = 5.5 },
         },
         IKTimeLine = {
             {

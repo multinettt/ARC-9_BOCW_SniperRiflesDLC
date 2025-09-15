@@ -126,10 +126,10 @@ sound.Add({
 })
 
 sound.Add({
-    name = "ARC9_BOCW.ZRG20mm_reload_boltforward",
+    name = "ARC9_BOCW.ZRG20mm_reload_end",
     channel = CHAN_AUTO,
     volume = 1.0,
-    sound = "weapons/arc9/bocw_zrg20mm/zrg20mm_reload_boltforward.wav"
+    sound = "weapons/arc9/bocw_zrg20mm/zrg20mm_reload_end.wav"
 })
 
 -- INSPECT FOLEY
