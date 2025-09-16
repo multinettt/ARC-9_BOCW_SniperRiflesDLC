@@ -38,7 +38,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeMagnification = 8
 ATT.RTScopeReticle = Material("hud/arc9_bocw/reticle_zrg20mm.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 1
 
@@ -729,26 +729,26 @@ ATT.Icon = Material("entities/bocw_atts/optics/swissk31_optic.png", "mips smooth
 ATT.Description = [[Default LW3 - Tundra scope.]]
 ATT.SortOrder = -1
 
-ATT.Model = "models/weapons/arc9/atts/bocw_lw3tundra_scope.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_scope.mdl"
 
-ATT.Category = {"bocw_lw3tundra_optic"}
+ATT.Category = {"bocw_swissk31_optic"}
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8.6, -1.33),
+        Pos = Vector(0, 7.6, -0.3),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 8,
         ViewModelFOV = 70
     },
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeMagnification = 8
-ATT.RTScopeReticle = Material("hud/arc9_bocw/reticle_lw3tundra.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.5
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeMagnification = 1
+ATT.RTScopeReticle = Material("hud/arc9_bocw/reticle_swissk31.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 5
+ATT.RTScopeShadowIntensity = 1
 
 ATT.ScopeScreenRatio = 0.5
 
@@ -791,7 +791,7 @@ ARC9.LoadAttachment(ATT, "bocw_swissk31_barrel_extended")
 ATT = {}
 
 ATT.PrintName = [[23.6" Cavalry Lancer]] --// 2
-ATT.CompactName = [[23.6" CAVLRY]]
+ATT.CompactName = [[23.6" CVLRY]]
 ATT.Icon = Material("entities/bocw_atts/barrels/swissk31_cavalry.png", "mips smooth")
 ATT.Description = [[Heavy profile barrel broach rifled to improve damage against enemy vehicles.
 
@@ -1281,8 +1281,6 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMultSights = 1.25
 
-ATT.ActivateElements = {"stockmountgone"}
-
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_tactical")
 
 ATT = {}
@@ -1298,13 +1296,15 @@ ATT.SortOrder = 2
 
 ATT.Category = "bocw_swissk31_stock"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_stock_marathon.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_stock_wire.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SprintToFireTimeMult = 0.9
+
+ATT.ActivateElements = {"stockgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_wire")
 
@@ -1327,13 +1327,15 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
+ATT.ActivateElements = {"stockgone"}
+
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_duster")
 
 ATT = {}
 
 ATT.PrintName = "No Stock" --// 4
 ATT.CompactName = "NO STOCK"
-ATT.Icon = Material("entities/bocw_atts/stocks/swissk31_cqb.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/stocks/swissk31_nostock.png", "mips smooth")
 ATT.Description = [[Removed stock enables concealment versatility to improve sprint recovery time.
 
 The No Stock attachment reappears in Call of Duty: Black Ops Cold War. It gives a much improved sprint to fire time at the cost of a worsened hip fire spread. It has alternates in the forms of Buffer Tube, CQB Pad, and Marathon Stock.]]
@@ -1342,7 +1344,7 @@ ATT.SortOrder = 4
 
 ATT.Category = "bocw_swissk31_stock"
 
-ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_stock_cqb.mdl"
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_stock_nostock.mdl"
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -1351,6 +1353,8 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.SprintToFireTimeMult = 0.7
 
 ATT.SpreadMultHipFire = 1.15
+
+ATT.ActivateElements = {"stockgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_nostock")
 
@@ -1403,6 +1407,8 @@ ATT.SprintToFireTimeMult = 0.7
 ATT.SpeedMultSighted = 1.4
 
 ATT.SpreadMultHipFire = 1.3
+
+ATT.ActivateElements = {"stockgone"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_raider")
 

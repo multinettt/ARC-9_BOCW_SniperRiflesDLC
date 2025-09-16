@@ -1037,7 +1037,7 @@ SWEP.Animations = {
     ["reload_mix"] = {
         Source = "reload_mix",
         Time = 4.2,
-        MinProgress = 0.7,
+        MinProgress = 0.65,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.2 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 0.8 },
@@ -1059,7 +1059,7 @@ SWEP.Animations = {
     ["reload_empty_mix"] = {
         Source = "reload_mix_empty",
         Time = 5.87,
-        MinProgress = 0.65,
+        MinProgress = 0.6,
         MagSwapTime = 2,
         DropMagAt = 1.9,
         EventTable = {
