@@ -66,6 +66,122 @@ ATT.Category = {"bocw_zrg20mm_optic"}
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_sniperdlc_optic_ironsights")
+--========== MUZZLE ===================
+ATT = {}
+
+ATT.PrintName = "Stabilizer 20"
+ATT.CompactName = "STABILIZER"
+ATT.Icon = Material("entities/bocw_atts/muzzles/zrg20mm_compensator1.png", "mips smooth")
+ATT.Description = [[Improved muzzle brake reduces weapon sway when aiming down sights.
+
+Stabilizer is a weapon attachment featured in Call of Duty: Black Ops 4 and Call of Duty: Black Ops Cold War. It reduces the idle sway when aiming with sniper rifles, Switchblade X9 SMG and the Mozu revolver. The Stablizer returns as a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It once more acts similar to the Black Ops 4 counterpart by reducing weapon sway while being not limited to the default scope.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_muzzle_compensator1.mdl"
+
+ATT.Category = {"bocw_zrg20mm_muzzle"}
+
+ATT.ModelOffset = Vector(-0.01, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_1"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.79
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_zrg20mm_muzzle_compensator1")
+
+ATT = {}
+
+ATT.PrintName = "Flash Hider 20"
+ATT.CompactName = "FLASH HIDER"
+ATT.Icon = Material("entities/bocw_atts/muzzles/zrg20mm_flashhider1.png", "mips smooth")
+ATT.Description = [[Lightweight flash hider reduces muzzle flash to conceal your position.
+
+The Flash Hider returns as a Muzzle attachment set available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It is identical to the Flash Guard, but is only available for sniper rifles. In Multiplayer, it reduces muzzle flash of a gun, also reduces the time of the player appears on enemy radar. In Zombies, it increases the drop rate of equipment, such as Lethals, Tacticals and Body Armor.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_muzzle_flashhider1.mdl"
+
+ATT.Category = {"bocw_zrg20mm_muzzle"}
+
+ATT.ModelOffset = Vector(-0.01, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_zrg20mm_muzzle_flashhider1")
+
+ATT = {}
+
+ATT.PrintName = "Infantry Stabilizer"
+ATT.CompactName = "INFANTRY"
+ATT.Icon = Material("entities/bocw_atts/muzzles/zrg20mm_compensatorpro.png", "mips smooth")
+ATT.Description = [[Lightweight muzzle brake further reduces weapon sway for improved control.
+
+The Infantry Stabilizer is a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It increases idle sway control much more than the standard Stabilizer but at the cost of a reduced Aim Down sights time.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_muzzle_compensatorpro.mdl"
+
+ATT.Category = {"bocw_zrg20mm_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Scale = 1
+
+ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.46
+
+ATT.AimDownSightsTimeMult = 1.2
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_zrg20mm_muzzle_compensatorpro")
+
+ATT = {}
+
+ATT.PrintName = "Task Force Shroud"
+ATT.CompactName = "TASK FORCE"
+ATT.Icon = Material("entities/bocw_atts/muzzles/zrg20mm_flashhiderpro.png", "mips smooth")
+ATT.Description = [[Lightweight muzzle shroud improves weapon sway control and reduces flash.
+
+The Task Force Shroud is a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It increases idle sway control along with reducing muzzle flash but at the cost of a reduced Aim Down sights time and increased movement speed while shooting. Whilst equipped in Zombies, the reduced bullet velocity is kept but the muzzle flash elimination is replaced for an increased drop rate of equipment, such as Lethals, Tacticals and Body Armor.]]
+
+ATT.SortOrder = 5
+
+ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_muzzle_flashhiderpro.mdl"
+
+ATT.Category = {"bocw_zrg20mm_muzzle"}
+
+ATT.ModelOffset = Vector(-0.1, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.58
+
+ATT.SpeedMultShooting = 0.6
+ATT.AimDownSightsTimeMult = 1.25
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_zrg20mm_muzzle_taskforceshroud")
 --========== BARREL ===================
 ATT = {}
 
@@ -757,7 +873,123 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_optic_base")
+--========== MUZZLE ===================
+ATT = {}
 
+ATT.PrintName = "Stabilizer 7.5"
+ATT.CompactName = "STABILIZER"
+ATT.Icon = Material("entities/bocw_atts/muzzles/swissk31_compensator1.png", "mips smooth")
+ATT.Description = [[Improved muzzle brake reduces weapon sway when aiming down sights.
+
+Stabilizer is a weapon attachment featured in Call of Duty: Black Ops 4 and Call of Duty: Black Ops Cold War. It reduces the idle sway when aiming with sniper rifles, Switchblade X9 SMG and the Mozu revolver. The Stablizer returns as a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It once more acts similar to the Black Ops 4 counterpart by reducing weapon sway while being not limited to the default scope.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_muzzle_compensator1.mdl"
+
+ATT.Category = {"bocw_swissk31_muzzle"}
+
+ATT.ModelOffset = Vector(-0.01, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_1"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.8
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_muzzle_compensator1")
+
+ATT = {}
+
+ATT.PrintName = "Flash Hider 7.5"
+ATT.CompactName = "FLASH HIDER"
+ATT.Icon = Material("entities/bocw_atts/muzzles/swissk31_flashhider1.png", "mips smooth")
+ATT.Description = [[Flash guard reduces muzzle flash to conceal your position from enemies.
+
+The Flash Hider returns as a Muzzle attachment set available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It is identical to the Flash Guard, but is only available for sniper rifles. In Multiplayer, it reduces muzzle flash of a gun, also reduces the time of the player appears on enemy radar. In Zombies, it increases the drop rate of equipment, such as Lethals, Tacticals and Body Armor.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_muzzle_flashhider1.mdl"
+
+ATT.Category = {"bocw_swissk31_muzzle"}
+
+ATT.ModelOffset = Vector(-0.01, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_muzzle_flashhider1")
+
+ATT = {}
+
+ATT.PrintName = "Infantry Stabilizer"
+ATT.CompactName = "INFANTRY"
+ATT.Icon = Material("entities/bocw_atts/muzzles/swissk31_compensatorpro.png", "mips smooth")
+ATT.Description = [[Lightweight muzzle brake further reduces weapon sway for improved control.
+
+The Infantry Stabilizer is a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It increases idle sway control much more than the standard Stabilizer but at the cost of a reduced Aim Down sights time.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_muzzle_compensatorpro.mdl"
+
+ATT.Category = {"bocw_swissk31_muzzle"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Scale = 1
+
+ATT.MuzzleParticleOverride = "muzzleflash_6"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.4
+
+ATT.AimDownSightsTimeMult = 1.2
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_muzzle_compensatorpro")
+
+ATT = {}
+
+ATT.PrintName = "Task Force Shroud"
+ATT.CompactName = "TASK FORCE"
+ATT.Icon = Material("entities/bocw_atts/muzzles/swissk31_flashhiderpro.png", "mips smooth")
+ATT.Description = [[Lightweight muzzle shroud improves weapon sway control and reduces flash.
+
+The Task Force Shroud is a Muzzle attachment available for all Sniper Rifles in Call of Duty: Black Ops Cold War. It increases idle sway control along with reducing muzzle flash but at the cost of a reduced Aim Down sights time and increased movement speed while shooting. Whilst equipped in Zombies, the reduced bullet velocity is kept but the muzzle flash elimination is replaced for an increased drop rate of equipment, such as Lethals, Tacticals and Body Armor.]]
+
+ATT.SortOrder = 5
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_muzzle_flashhiderpro.mdl"
+
+ATT.Category = {"bocw_swissk31_muzzle"}
+
+ATT.ModelOffset = Vector(-0.1, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.MuzzleParticleOverride = "muzzleflash_pistol"
+ATT.MuzzleParticleOverride_Priority = 1000
+ATT.MuzzleDevice = true
+
+ATT.SwayMult = 0.6
+
+ATT.SpeedMultShooting = 0.6
+ATT.AimDownSightsTimeMult = 1.25
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_muzzle_taskforceshroud")
+--========== BARREL ===================
 ATT = {}
 
 ATT.PrintName = [[24.9" Extended]] --// 1
@@ -767,7 +999,7 @@ ATT.Description = [[Extended reinforced barrel with a chrome lined bore to impro
 
 Within Call of Duty: Black Ops Cold War, the Long Barrel returns as the Extended barrel family of barrel attachments, giving increased muzzle velocity for most weaponry it can be attached to. However, it gives increased effective range for Shotguns and the Marshal, with the Marshal also gaining a worsened sprinting to fire time. The LAPA also gains an increased fire rate at the cost of reduced damage.]]
 
-ATT.SortOrder = 22.2
+ATT.SortOrder = 24.9
 
 ATT.Category = "bocw_swissk31_barrel"
 
@@ -1418,7 +1650,7 @@ ATT = {}
 
 ATT.PrintName = "ZRG Muzzle Device"
 ATT.CompactName = "MUZZLE"
-ATT.Icon = Material("entities/bocw_atts/muzzles/m82_base.png", "mips smooth")
+ATT.Icon = Material("entities/bocw_atts/noicon.png", "mips smooth")
 ATT.Description = [[Default ZRG 20mm muzzle device.]]
 
 ATT.SortOrder = -10

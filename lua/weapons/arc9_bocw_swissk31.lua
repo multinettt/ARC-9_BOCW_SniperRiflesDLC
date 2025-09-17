@@ -490,42 +490,42 @@ SWEP.AttachmentElements = {
     ["barrel_extended"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1, 0, 0),
+                Pos = Vector(20.3, 0, 0),
             },
         },
     },
     ["barrel_cavalry"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.1, 0, 0),
+                Pos = Vector(15.9, 0, 0),
             },
         },
     },
     ["barrel_rapidfire"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(-0.9, 0, 0),
+                Pos = Vector(15.9, 0, 0),
             },
         },
     },
     ["barrel_combatrecon"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(2, 0, 0),
+                Pos = Vector(20.3, 0, 0),
             }
         },
     },
-    ["barrel_hammerforged"] = {
+    ["barrel_ultralight"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1.1, 0, 0),
+                Pos = Vector(11.2, 0, 0),
             },
         },
     },
     ["barrel_tigerteam"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(1, 0, 0),
+                Pos = Vector(20.3, 0, 0),
             }
         },
     },
@@ -541,8 +541,8 @@ SWEP.AttachmentSlotMods = {
 
 -- Adjust the stats of specific attachments when applied to this gun
 SWEP.AttachmentTableOverrides = {
-    ["bocw_body_flashlightpro_west"] = {
-        ModelOffset = Vector(0,0.02,-0.98),
+    ["bocw_sniperrifles_muzzle_soundmoderator"] = {
+        ModelOffset = Vector(-0.4,0,0),
         Scale = 1,
     },
     ["bocw_optic_visiontech2x"] = {
@@ -595,7 +595,7 @@ SWEP.Attachments = {
     {
         PrintName = "MUZZLE",
         Bone = "tag_barrel",
-        Pos = Vector(16, 0, 0),
+        Pos = Vector(15.9, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Category = {"bocw_swissk31_muzzle"},
