@@ -632,7 +632,7 @@ SWEP.Attachments = {
     {
         PrintName = "UNDRBARREL",
         Bone = "tag_weapon",
-        Pos = Vector(-7.6, -4.42, 6.1),
+        Pos = Vector(-7.6, -4.42, 4.95),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(20.25, 4.5, -5),
         Category = {"bocw_zrg20mm_underbarrel", "bocw_sn_underbarrel"},
@@ -714,7 +714,7 @@ SWEP.Hook_ModifyBodygroups = function(self, data)
     end
 
     if attached["bocw_sniper_underbarrel_frontgrip"] or attached["bocw_sniper_underbarrel_bipod"] then
-        vm:SetBodygroup(8, 1)
+        vm:SetBodygroup(6, 1)
     end
 end
 

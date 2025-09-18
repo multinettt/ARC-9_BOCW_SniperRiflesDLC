@@ -1180,6 +1180,191 @@ ATT.ActivateElements = {"barrel_tigerteam"}
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_barrel_tigerteam")
+--========== UNDERBARREL ==============
+ATT = {}
+
+ATT.PrintName = "Front Grip"
+ATT.CompactName = "FRONT GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_frontgrip.png", "mips smooth")
+ATT.Description = [[Bipod and tightly wrapped fabric bands to increase grip and improve recoil control.
+
+The Front Grip is an Underbarrel attachment available for all Tactical Rifles and Sniper Rifles alongside the KSP 45 Submachine Gun in Call of Duty: Black Ops Cold War. It improves horizontal and vertical recoil equally for Sniper Rifles and just horizontal for Tactical Rifles and the KSP 45.]]
+
+ATT.SortOrder = 1
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_frontgrip.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.BipodOverride = true
+
+ATT.RecoilUpMult = 0.7
+ATT.RecoilSideMult = 0.7
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_frontgrip")
+
+ATT = {}
+
+ATT.PrintName = "Infiltrator Grip"
+ATT.CompactName = "INFILTRATOR"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_infiltrator.png", "mips smooth")
+ATT.Description = [[Retrofitted leather foregrip for improved combat maneuverability.
+
+The Infiltrator Grip is an Underbarrel attachment available for Assault Rifles, Tactical Rifles, Light Machine Guns and Sniper Rifles in Call of Duty: Black Ops Cold War. It gives a general increase in standard movement types.]]
+
+ATT.SortOrder = 2
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_infiltrator.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMult = 1.05
+ATT.SpeedMultShooting = 1.05
+ATT.SpeedMultSighted = 1.05
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_infiltrator")
+
+ATT = {}
+
+ATT.PrintName = "Patrol Bipod"
+ATT.CompactName = "PATROL BPD"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_patrol.png", "mips smooth")
+ATT.Description = [[Lightweight bipod reduces weapon weight for improved sprint speed.
+
+The Patrol Bipod is an Underbarrel attachment available exclusively for the Swiss K31 in Call of Duty: Black Ops Cold War. It acts as the Patrol Grip in function, giving a minor increase to sprinting speed.]]
+
+ATT.SortOrder = 3
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_patrol.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.BipodOverride = true
+
+ATT.SpeedMultSprint = 1.06
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_patrol")
+
+ATT = {}
+
+ATT.PrintName = "Bruiser Grip"
+ATT.CompactName = "BRUISR GRIP"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_bruiser.png", "mips smooth")
+ATT.Description = [[Thick fabric tape improves grip for faster melee combat and movement speeds.
+
+The Bruiser Grip is an Underbarrel attachment available for all Primary Weapons in Call of Duty: Black Ops Cold War. It gives a minor increase to movement speeds alongside an increase to melee swing speeds.]]
+
+ATT.SortOrder = 4
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_bruiser.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.SpeedMult = 1.03
+ATT.SpeedMultSprint = 1.03
+ATT.SpeedMultShooting = 1.03
+ATT.SpeedMultSighted = 1.03
+ATT.BashSpeedMult = 1.4
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_bruisergrip")
+
+ATT = {}
+
+ATT.PrintName = "Bipod"
+ATT.CompactName = "BIPOD"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_bipod.png", "mips smooth")
+ATT.Description = [[Bipod and makeshift fabric foregrip for improved recoil control.
+
+The Bipod is an Underbarrel attachment available for all Sniper Rifles. It improves recoil in both horizontal and vertical, primary horizontal but at the cost of a lowered movement speed while sprinting. The Sniper Rifle version of the Field Agent Grip and Spetsnaz Grip.]]
+
+ATT.SortOrder = 5
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_bipod.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.BipodOverride = true
+
+ATT.RecoilUpMult = 0.5
+ATT.RecoilSideMult = 0.5
+
+ATT.SpeedMultSprint = 0.95
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_bipod")
+
+ATT = {}
+
+ATT.PrintName = "SFOD Bipod"
+ATT.CompactName = "SFOD BIPOD"
+ATT.Icon = Material("entities/bocw_atts/underbarrels/swissk31_sfod.png", "mips smooth")
+ATT.Description = [[Compact folding bipod for improved sprint speed and recoil control.
+
+The SFOD Bipod is an Underbarrel attachment available exclusively for the Swiss K31 in Call of Duty: Black Ops Cold War. It acts as the SFOD Speedgrip in function, giving a minor increase to sprinting speed and decent horizontal recoil control increase while decreasing movement speed, shooting movement speed and aiming movement speed.]]
+
+ATT.SortOrder = 6
+
+ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_underbarrel_sfod.mdl"
+
+ATT.Category = {"bocw_swissk31_underbarrel"}
+
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.BipodOverride = true
+
+ATT.SpeedMultSprint = 1.05
+ATT.RecoilSideMult = 0.75
+
+ATT.SpeedMult = 0.94
+ATT.SpeedMultShooting = 0.94
+ATT.SpeedMultSighted = 0.94
+
+ATT.MenuCategory = "ARC9 - BOCW Attachments"
+
+ARC9.LoadAttachment(ATT, "bocw_swissk31_underbarrel_sfodbipod")
 --========== MAGAZINE =================
 ATT = {}
 
