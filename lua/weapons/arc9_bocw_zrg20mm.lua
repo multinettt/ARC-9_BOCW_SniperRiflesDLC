@@ -393,7 +393,7 @@ SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting v
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(0, 0, 1.94),
+    Pos = Vector(0, -9, 1.94),
     Ang = Angle(0, 0, 0),
     Magnification = 1.4,
     Blur = true,

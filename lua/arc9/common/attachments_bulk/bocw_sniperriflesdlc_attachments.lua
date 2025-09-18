@@ -61,7 +61,7 @@ The Iron Sights attachment return in Call of Duty: Black Ops Cold War as a Optic
 
 ATT.SortOrder = 0
 
-ATT.Category = {"bocw_zrg20mm_optic"}
+ATT.Category = {"bocw_zrg20mm_optic", "bocw_swissk31_optic"}
 
 ATT.MenuCategory = "ARC9 - BOCW Attachments"
 
@@ -842,7 +842,7 @@ ATT = {}
 ATT.PrintName = "K31 Scope"
 ATT.CompactName = "OPTIC"
 ATT.Icon = Material("entities/bocw_atts/optics/swissk31_optic.png", "mips smooth")
-ATT.Description = [[Default LW3 - Tundra scope.]]
+ATT.Description = [[Default Swiss K31 scope.]]
 ATT.SortOrder = -1
 
 ATT.Model = "models/weapons/arc9/atts/bocw_swissk31_scope.mdl"
@@ -851,7 +851,7 @@ ATT.Category = {"bocw_swissk31_optic"}
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7.6, -0.3),
+        Pos = Vector(0, 7.6, -0.29),
         Ang = Angle(0, 0, 0),
         Magnification = 8,
         ViewModelFOV = 70
