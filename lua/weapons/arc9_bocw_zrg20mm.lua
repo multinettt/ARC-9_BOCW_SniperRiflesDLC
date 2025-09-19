@@ -156,7 +156,7 @@ SWEP.ManualActionChamber = 1 -- How many shots we go between needing to cycle ag
 SWEP.ManualAction = true -- Pump/bolt action. Play the "cycle" animation after firing, when the trigger is released.
 SWEP.ManualActionNoLastCycle = true -- Do not cycle on the last shot.
 SWEP.ManualActionEjectAnyway = false -- Eject a shell when firing anyway.
-SWEP.EjectDelay = 0.4
+SWEP.EjectDelay = 0.5
 
 SWEP.DropMagazineModel = "models/weapons/arc9/atts/bocw_zrg20mm_magazine.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineSounds = {} -- Table of sounds a dropped magazine should play.
@@ -165,8 +165,8 @@ SWEP.DropMagazineSkin = 0 -- Model skin of mag.
 SWEP.DropMagazineTime = 2
 SWEP.DropMagazineQCA = 4 -- QC Attachment drop mag from, would drop from shell port if not defined
 SWEP.DropMagazinePos = Vector(0, 0, 0) -- offsets
-SWEP.DropMagazineAng = Angle(0, -90, -90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 80) -- Put something here if your anim throws the mag with force
+SWEP.DropMagazineAng = Angle(180, 0, 0)
+SWEP.DropMagazineVelocity = Vector(-80, 0, 80) -- Put something here if your anim throws the mag with force
 
 -------------------------- FIREMODES
 
@@ -333,12 +333,12 @@ SWEP.BreathRunOutSound = "arc9/breath_runout.wav"
 SWEP.MuzzleParticle = "muzzleflash_1" -- Used for some muzzle effects.
 --SWEP.MuzzleEffect = "MuzzleFlash"
 
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
+SWEP.ShellModel = "models/shells/shell_556.mdl"
 
 SWEP.ShellSmoke = true
 SWEP.NoShellEject = false
 
-SWEP.ShellScale = 1
+SWEP.ShellScale = 2
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 SWEP.ShellPitch = 100 -- for shell sounds
@@ -361,7 +361,9 @@ SWEP.BobSprintMult = 0.1
 -------------------------- VISUALS
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    "tag_bullets"
+    "tag_bullet_deplete_sqtl_00_animate",
+    "tag_bullet_deplete_sqtl_01_animate",
+    "tag_bullet_deplete_sqtl_02_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
@@ -377,7 +379,7 @@ SWEP.StripperClipBGs = {}
 SWEP.HideBones = {
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
-    [1] = {"tag_clip", "tag_bullets"},
+    [1] = {"tag_clip", "tag_bullet_deplete_sqtl_00_animate", "tag_bullet_deplete_sqtl_01_animate", "tag_bullet_deplete_sqtl_02_animate"},
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -903,8 +905,8 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 5.87,
         MinProgress = 0.6,
-        MagSwapTime = 2,
-        DropMagAt = 1.7,
+        MagSwapTime = 3,
+        DropMagAt = 2.7,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
@@ -914,8 +916,8 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.8 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.7 },
             { hide = 0, t = 0 },
-            { hide = 1, t = 1.7 },
-            { hide = 0, t = 2.2 },
+            { hide = 1, t = 2.7 },
+            { hide = 0, t = 2.9 },
         },
         IKTimeLine = {
             {
@@ -968,8 +970,8 @@ SWEP.Animations = {
         Source = "reload_ext_empty",
         Time = 5.87,
         MinProgress = 0.6,
-        MagSwapTime = 2,
-        DropMagAt = 1.7,
+        MagSwapTime = 3,
+        DropMagAt = 2.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
@@ -979,8 +981,8 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.ZRG20mm_reload_end", t = 3.8 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.7 },
             { hide = 0, t = 0 },
-            { hide = 1, t = 1.7 },
-            { hide = 0, t = 2.2 },
+            { hide = 1, t = 2.5 },
+            { hide = 0, t = 2.7 },
         },
         IKTimeLine = {
             {
@@ -1031,7 +1033,7 @@ SWEP.Animations = {
         Source = "reload_fast_empty",
         Time = 5.87,
         MinProgress = 0.6,
-        DropMagAt = 1.6,
+        MagSwapTime = 2.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
@@ -1039,9 +1041,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.6 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_magintap", t = 3.3 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.4 },
-            { hide = 0, t = 0 },
-            { hide = 1, t = 1.6 },
-            { hide = 0, t = 2 },
         },
         IKTimeLine = {
             {
@@ -1092,17 +1091,13 @@ SWEP.Animations = {
         Source = "reload_mix_empty",
         Time = 5.87,
         MinProgress = 0.6,
-        MagSwapTime = 2,
-        DropMagAt = 1.9,
+        MagSwapTime = 2.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.5 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.6 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.3 },
-            { hide = 0, t = 0 },
-            { hide = 1, t = 1.9 },
-            { hide = 0, t = 2.2 },
         },
         IKTimeLine = {
             {

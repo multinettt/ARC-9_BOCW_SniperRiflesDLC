@@ -164,7 +164,7 @@ SWEP.DropMagazineTime = 2
 SWEP.DropMagazineQCA = 4 -- QC Attachment drop mag from, would drop from shell port if not defined
 SWEP.DropMagazinePos = Vector(0, 0, 0) -- offsets
 SWEP.DropMagazineAng = Angle(0, -90, -90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 80) -- Put something here if your anim throws the mag with force
+SWEP.DropMagazineVelocity = Vector(0, 0, 0) -- Put something here if your anim throws the mag with force
 
 -------------------------- FIREMODES
 
@@ -359,7 +359,9 @@ SWEP.BobSprintMult = 0.1
 -------------------------- VISUALS
 
 SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
-    "tag_bullets"
+    "tag_bullet_deplete_sqtl_00_animate",
+    "tag_bullet_deplete_sqtl_01_animate",
+    "tag_bullet_deplete_sqtl_02_animate"
 }
 SWEP.CaseBones = {}
 -- Unlike BulletBones, these bones are determined by the missing bullet amount when reloading
@@ -375,7 +377,7 @@ SWEP.StripperClipBGs = {}
 SWEP.HideBones = {
 } -- bones to hide in third person and customize menu. {"list", "of", "bones"}
 SWEP.ReloadHideBoneTables = {
-    [1] = {"tag_clip", "tag_bullets"},
+    [1] = {"tag_clip", "tag_mag_release_animate", "tag_bullet_deplete_sqtl_00_animate", "tag_bullet_deplete_sqtl_01_animate", "tag_bullet_deplete_sqtl_02_animate"},
 }
 
 SWEP.PoseParameters = {} -- Poseparameters to manage. ["parameter"] = starting value.
@@ -808,8 +810,8 @@ SWEP.Animations = {
         Source = "reload_empty",
         Time = 3.83,
         MinProgress = 0.7,
-        MagSwapTime = 2,
-        DropMagAt = 1.7,
+        MagSwapTime = 1.2,
+        DropMagAt = 1.5,
         EventTable = {
             { s = "ARC9_BOCW.SwissK31_reload_start", t = 0 },
             { s = "ARC9_BOCW.SwissK31_boltback", t = 0.3 },
@@ -818,8 +820,8 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_empty_thumb", t = 2.4 },
             { s = "ARC9_BOCW.SwissK31_reload_empty_boltforward", t = 2.9 },
             { hide = 0, t = 0 },
-            { hide = 1, t = 1.7 },
-            { hide = 0, t = 2.2 },
+            { hide = 1, t = 1.2 },
+            { hide = 0, t = 1.7 },
         },
     },
     ["reload_ext"] = {
@@ -838,7 +840,7 @@ SWEP.Animations = {
         Source = "reload_ext_empty",
         Time = 3.83,
         MinProgress = 0.7,
-        MagSwapTime = 2,
+        MagSwapTime = 1.5,
         DropMagAt = 1.7,
         EventTable = {
             { s = "ARC9_BOCW.SwissK31_reload_start", t = 0 },
@@ -876,7 +878,7 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_empty_boltforward", t = 2.9 },
             { hide = 0, t = 0 },
             { hide = 1, t = 1.6 },
-            { hide = 0, t = 2 },
+            { hide = 0, t = 1.8 },
         },
     },
     ["reload_mix"] = {
@@ -895,7 +897,7 @@ SWEP.Animations = {
         Time = 3.83,
         MinProgress = 0.65,
         MagSwapTime = 2,
-        DropMagAt = 1.9,
+        DropMagAt = 1.6,
         EventTable = {
             { s = "ARC9_BOCW.SwissK31_boltback", t = 0 },
             { s = "ARC9_BOCW.SwissK31_reload_start", t = 0.7 },
@@ -903,8 +905,8 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_fast_magin", t = 1.8 },
             { s = "ARC9_BOCW.SwissK31_reload_empty_boltforward", t = 2.9 },
             { hide = 0, t = 0 },
-            { hide = 1, t = 1.9 },
-            { hide = 0, t = 2.2 },
+            { hide = 1, t = 1.6 },
+            { hide = 0, t = 1.8 },
         },
     },
     ["enter_sprint"] = {
