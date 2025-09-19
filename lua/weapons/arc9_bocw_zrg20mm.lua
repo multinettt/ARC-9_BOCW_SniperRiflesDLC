@@ -494,7 +494,7 @@ SWEP.AttachmentElements = {
     ["barrel_extended"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(3.18, 0, 0),
+                Pos = Vector(3.12, 0, 0),
             },
         },
     },
@@ -515,7 +515,7 @@ SWEP.AttachmentElements = {
     ["barrel_combatrecon"] = {
         AttPosMods = {
             [2] = {
-                Pos = Vector(8.33, 0, 0),
+                Pos = Vector(8.27, 0, 0),
             }
         },
     },

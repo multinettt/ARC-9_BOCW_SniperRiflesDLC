@@ -199,7 +199,7 @@ ATT.Category = "bocw_zrg20mm_barrel"
 ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_barrel_extended.mdl"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(-0.06, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -290,7 +290,7 @@ ATT.Category = "bocw_zrg20mm_barrel"
 ATT.Model = "models/weapons/arc9/atts/bocw_zrg20mm_barrel_combatrecon.mdl"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(-0.06, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.PhysBulletMuzzleVelocityMult = 1.21
