@@ -763,38 +763,9 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["holster"] = {
         Source = "holster",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.6,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["ready"] = {
         Source = {"ready"},
@@ -802,18 +773,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_boltback", t = 0.3 },
             { s = "ARC9_BOCW.SwissK31_boltforward", t = 0.5 },
             { s = "ARC9_BOCW.SwissK31_reload_end", t = 1 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["cycle"] = {
@@ -828,28 +787,6 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = "melee",
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.2,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.65,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.8,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["fire"] = {
         Source = {"fire"},
@@ -865,18 +802,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_magin", t = 1.5 },
             { s = "ARC9_BOCW.SwissK31_reload_magintap", t = 2 },
             { s = "ARC9_BOCW.SwissK31_reload_end", t = 2.3 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["reload_empty"] = {
@@ -896,18 +821,6 @@ SWEP.Animations = {
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["reload_ext"] = {
         Source = "reload_ext",
@@ -919,18 +832,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_magin", t = 1.5 },
             { s = "ARC9_BOCW.SwissK31_reload_magintap", t = 2 },
             { s = "ARC9_BOCW.SwissK31_reload_end", t = 2.3 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["reload_empty_ext"] = {
@@ -950,18 +851,6 @@ SWEP.Animations = {
             { hide = 1, t = 1.7 },
             { hide = 0, t = 2.2 },
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["reload_fast"] = {
         Source = "reload_fast",
@@ -972,28 +861,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_magout", t = 0.3 },
             { s = "ARC9_BOCW.SwissK31_reload_fast_magin", t = 1.4 },
             { s = "ARC9_BOCW.SwissK31_reload_end", t = 2.1 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.8,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["reload_empty_fast"] = {
@@ -1011,33 +878,6 @@ SWEP.Animations = {
             { hide = 1, t = 1.6 },
             { hide = 0, t = 2 },
         },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.15,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.65,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.75,
-                lhik = 1,
-                rhik = 0
-            },
-        },
     },
     ["reload_mix"] = {
         Source = "reload_mix",
@@ -1048,18 +888,6 @@ SWEP.Animations = {
             { s = "ARC9_BOCW.SwissK31_reload_magout", t = 0.3 },
             { s = "ARC9_BOCW.SwissK31_reload_fast_magin", t = 1.4 },
             { s = "ARC9_BOCW.SwissK31_reload_end", t = 2.1 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["reload_empty_mix"] = {
@@ -1077,18 +905,6 @@ SWEP.Animations = {
             { hide = 0, t = 0 },
             { hide = 1, t = 1.9 },
             { hide = 0, t = 2.2 },
-        },
-        IKTimeLine = {
-            {
-                t = 0,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 1,
-                lhik = 1,
-                rhik = 0
-            },
         },
     },
     ["enter_sprint"] = {

@@ -800,11 +800,16 @@ SWEP.Animations = {
         IKTimeLine = {
             {
                 t = 0,
-                lhik = 1,
+                lhik = 0,
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.6,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.7,
                 lhik = 1,
                 rhik = 0
             },
@@ -816,6 +821,28 @@ SWEP.Animations = {
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0.1 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 0.6 },
+        },
+        IKTimeLine = {
+            {
+                t = 0,
+                lhik = 1,
+                rhik = 0
+            },
+            {
+                t = 0.2,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 1,
+                rhik = 0
+            },
         },
         FireASAP = true
     },
@@ -838,7 +865,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.8,
+                t = 0.7,
                 lhik = 1,
                 rhik = 0
             },
@@ -897,7 +924,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.05,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -952,7 +989,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.05,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.9,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -974,17 +1021,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.1,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.8,
+                t = 1,
                 lhik = 1,
                 rhik = 0
             },
@@ -1013,22 +1050,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.15,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.25,
+                t = 0.05,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.65,
+                t = 0.8,
                 lhik = 0,
                 rhik = 0
             },
             {
-                t = 0.75,
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1079,7 +1111,17 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 1,
+                t = 0.05,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.8,
+                lhik = 0,
+                rhik = 0
+            },
+            {
+                t = 0.95,
                 lhik = 1,
                 rhik = 0
             },
@@ -1116,22 +1158,7 @@ SWEP.Animations = {
                 rhik = 0
             },
             {
-                t = 0.65,
-                lhik = 1,
-                rhik = 0
-            },
-            {
-                t = 0.7,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.85,
-                lhik = 0,
-                rhik = 0
-            },
-            {
-                t = 0.9,
+                t = 1,
                 lhik = 1,
                 rhik = 0
             },
