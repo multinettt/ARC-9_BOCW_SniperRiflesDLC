@@ -907,6 +907,7 @@ SWEP.Animations = {
         MinProgress = 0.6,
         MagSwapTime = 3,
         DropMagAt = 2.7,
+        EjectAt = 0.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
@@ -972,6 +973,7 @@ SWEP.Animations = {
         MinProgress = 0.6,
         MagSwapTime = 3,
         DropMagAt = 2.5,
+        EjectAt = 0.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_start", t = 0.5 },
@@ -1034,6 +1036,7 @@ SWEP.Animations = {
         Time = 5.87,
         MinProgress = 0.6,
         MagSwapTime = 2.5,
+        EjectAt = 0.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
@@ -1092,11 +1095,12 @@ SWEP.Animations = {
         Time = 5.87,
         MinProgress = 0.6,
         MagSwapTime = 2.5,
+        EjectAt = 0.5,
         EventTable = {
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_empty_boltback", t = 0 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magoutstart", t = 0.8 },
             { s = "ARC9_BOCW.ZRG20mm_reload_fast_magout", t = 1.5 },
-            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.6 },
+            { s = "ARC9_BOCW.ZRG20mm_reload_fast_magin", t = 2.7 },
             { s = "ARC9_BOCW.ZRG20mm_boltforward", t = 4.3 },
         },
         IKTimeLine = {
