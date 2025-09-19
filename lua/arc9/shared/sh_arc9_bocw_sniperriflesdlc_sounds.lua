@@ -254,6 +254,13 @@ sound.Add({
     sound = "weapons/arc9/bocw_swissk31/swissk31_reload_fast_magin.wav"
 })
 
+sound.Add({
+    name = "ARC9_BOCW.SwissK31_shellcasings",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    sound = {"weapons/arc9/bocw_swissk31/swissk31_casingvar1.wav", "weapons/arc9/bocw_swissk31/swissk31_casingvar2.wav", "weapons/arc9/bocw_swissk31/swissk31_casingvar3.wav", "weapons/arc9/bocw_swissk31/swissk31_casingvar4.wav", "weapons/arc9/bocw_swissk31/swissk31_casingvar5.wav"}
+})
+
 -- CHARGING HANDLE
 
 sound.Add({

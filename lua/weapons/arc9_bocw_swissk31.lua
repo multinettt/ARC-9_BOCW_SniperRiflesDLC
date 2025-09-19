@@ -346,7 +346,6 @@ SWEP.MuzzleEffectQCA = 1 -- QC Attachment that controls muzzle effect.
 SWEP.CaseEffectQCA = 2 -- QC Attachment for shell ejection.
 SWEP.CamQCA = 3
 
-
 --SWEP.DoFireAnimation = true
 
 SWEP.FireInterruptInspect = true
@@ -702,6 +701,39 @@ SWEP.Attachments = {
         Category = "stickers",
         StickerModel = "models/weapons/arc9/stickers/bocw_swissk31_sticker4.mdl",
         CosmeticOnly = true,
+        ExcludeElements = {"swissk31_tactical", "swissk31_sascombat", "swissk31_minstock", "swissk31_mixstock"}
+    },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_weapon",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_swissk31_sticker4_tactical.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"swissk31_tactical"}
+    },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_weapon",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_swissk31_sticker4_sascombat.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"swissk31_sascombat"}
+    },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_weapon",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_swissk31_sticker4_minstock.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"swissk31_minstock"}
+    },
+    {
+        PrintName = "STICKER 4", 
+        Bone = "tag_weapon",
+        Category = "stickers",
+        StickerModel = "models/weapons/arc9/stickers/bocw_swissk31_sticker4_mixstock.mdl",
+        CosmeticOnly = true,
+        RequireElements = {"swissk31_mixstock"}
     },
 }
 

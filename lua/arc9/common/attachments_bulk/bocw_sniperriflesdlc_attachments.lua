@@ -1698,6 +1698,8 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SpeedMultSights = 1.25
 
+ATT.ActivateElements = {"swissk31_tactical"}
+
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_tactical")
 
 ATT = {}
@@ -1721,7 +1723,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 
 ATT.SprintToFireTimeMult = 0.9
 
-ATT.ActivateElements = {"stockgone"}
+ATT.ActivateElements = {"stockgone", "swissk31_minstock"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_wire")
 
@@ -1744,7 +1746,7 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.ActivateElements = {"stockgone"}
+ATT.ActivateElements = {"stockgone", "swissk31_mixstock"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_duster")
 
@@ -1771,7 +1773,7 @@ ATT.SprintToFireTimeMult = 0.7
 
 ATT.SpreadMultHipFire = 1.15
 
-ATT.ActivateElements = {"stockgone"}
+ATT.ActivateElements = {"stockgone", "swissk31_minstock"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_nostock")
 
@@ -1799,6 +1801,8 @@ ATT.SpeedMultSighted = 1.5
 
 ATT.SpreadMultHipFire = 1.15
 
+ATT.ActivateElements = {"swissk31_sascombat"}
+
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_sascombat")
 
 ATT = {}
@@ -1825,7 +1829,7 @@ ATT.SpeedMultSighted = 1.4
 
 ATT.SpreadMultHipFire = 1.3
 
-ATT.ActivateElements = {"stockgone"}
+ATT.ActivateElements = {"stockgone", "swissk31_mixstock"}
 
 ARC9.LoadAttachment(ATT, "bocw_swissk31_stock_raider")
 
