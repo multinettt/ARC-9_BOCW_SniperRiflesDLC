@@ -867,7 +867,7 @@ ATT.RTScopeReticle = Material("hud/arc9_bocw/reticle_swissk31.png", "mips smooth
 
 ATT.RTScopeReticleScale = 0.67
 ATT.RTScopeNew_ShadowScale = 1.9
-
+ATT.RTScopeNew_DisableRTVM = true
 ATT.RTScopeColorable = false -- TODO: make this toggleable?
 
 ATT.ModelOffset = Vector(0, 0, 0)
